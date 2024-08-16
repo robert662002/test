@@ -21,7 +21,10 @@ def print_movie_list(heading,movies):
         human_date = movie_date.strftime("%b %d %Y")
         print(f"{_id}: {title} released on {human_date}")
     print("--------------------\n")
-
+def prompt_watch_movie():
+    username=input("username: ")
+    movie_id=input("enter movie id ")
+    database.watch_movie(username,movie_id)
 
 def prompt_watch_movie():
     username=input("username: ")
